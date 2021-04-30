@@ -1,0 +1,564 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Mulish', sans-serif;
+}
+
+.center{
+	margin: 0 auto;
+	max-width: 1272px;
+	padding: 0 30px;
+}
+
+.flexBlock{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+/* HEADER */
+
+body > header .lineTop{
+	padding: 36px 0;
+}
+
+body > header .lineTop nav li{
+	margin: 0 25px;
+}
+
+body > header .lineTop nav a{
+	font-size: 22px;
+	color: #000;
+	font-weight: bold;
+}
+
+body > header .lineTop .gone{
+	display: none;
+}
+
+body > header .lineTop nav ul{
+	margin: 0;
+}
+
+body > header .lineTop nav a:hover{
+	color: #6764cb;
+}
+
+body > header select{
+	padding: 10px;
+	border-radius: 7px;
+	outline: none;
+	color: #b7b7b7;
+	font-size: 22px;
+	border: 1px solid #b7b7b7;
+}
+
+/* SECTION CONTAINER FLUID*/
+
+body > section .container-fluid{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body > section .container-fluid .row{
+	margin: 0;
+	width: 100%;
+}
+
+body > section .container-fluid .nopadding{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body > section .container-fluid img{
+	height: 458px;
+	width: 100%;
+}
+
+/* SECTION ICONS */
+
+body > section .icons{
+	padding: 94px 0;
+}
+
+body > section .icons .list{
+	flex-wrap: wrap;
+}
+
+body > section .icons .item{
+	background: #e6e6e6;
+	width: 212px;
+	height: 212px;
+	margin: 20px;
+	flex: auto;
+}
+
+body > section .icons .brighter{
+	background: #f6f6f6;
+}
+
+body > section .icons img{
+	margin: 0 auto;
+	display: block;
+	max-width: 160px;
+	max-height: 150px;
+	width: auto;
+	height: auto;
+}
+
+/* CONTACT SECTION */
+
+body > section .contact{
+	background: rgb(127,137,218);
+	background: radial-gradient(circle, rgba(127,137,218,1) 33%, rgba(114,117,210,1) 45%, rgba(105,102,204,1) 100%);
+	padding: 64px 0 80px;
+	margin-bottom: 78px;
+}
+
+body > section .contact .title{
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 68px;
+}
+
+body > section .contact .title .contactTitle{
+	font-size: 48px;
+	color: #fff;
+}
+
+body > section .contact .break{
+	height: 6px;
+	width: 68px;
+	background: #fff;
+	display: block;
+	border-radius: 5px;
+	margin: 14px auto 0;
+}
+
+body > section .contact form{
+	padding: 0 100px;
+	position: relative;
+	text-align: center;
+}
+
+body > section .contact .leftcol{
+	width: 500px;
+	flex-direction: column;
+	padding-right: 10px;
+	align-items: flex-start;
+	margin-top: -24px;
+}
+
+body > section .contact .rightcol{
+	width: 500px;
+	flex-direction: column;
+	padding-left: 10px;
+}
+
+body > section .contact .leftcol > input{
+	width: 100%;
+	height: 60px;
+	border-radius: 12px;
+	margin: 18px 0;
+	border: none;
+	outline: none;
+	padding-left: 22px;
+	font-size: 20px;
+}
+
+body > section .contact .rightcol select{
+	width: 100%;
+	height: 60px;
+	border-radius: 12px;
+	margin: 18px 0;
+	border: none;
+	outline: none;
+	padding-left: 22px;
+	font-size: 20px;
+}
+
+body > section .contact .rightcol .message{
+	height: 246px;
+	width: 100%;
+	border-radius: 12px;
+	margin: 18px 0;
+	border: none;
+	outline: none;
+	padding: 20px;
+	font-size: 20px;
+	resize: none;
+}
+
+body > section .contact .leftcol .options{
+	margin-top: 28px;
+	text-align: left;
+}
+
+body > section .contact .leftcol h3{
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 24px;
+}
+
+body > section .contact .leftcol .custom{
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 16px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body > section .contact .leftcol .options input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+body > section .contact .leftcol .options .checkmark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+body > section .contact .leftcol .options .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+body > section .contact .custom input:checked ~ .checkmark:after {
+	display: block;
+}
+
+body > section .contact .custom .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #000;
+}
+
+body > section .contact form .agree{
+	margin-top: 70px;
+	font-size: 16px;
+	color: #fff;
+	position: relative;
+	cursor: pointer;
+	padding-left: 35px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body > section .contact .agree input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+body > section .contact .agree .checkmark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+body > section .contact .agree .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+body > section .contact .agree input:checked ~ .checkmark:after {
+	display: block;
+}
+
+body > section .contact .agree .checkmark:after {
+	left: 10px;
+	top: 6px;
+	width: 5px;
+	height: 12px;
+	border: solid #000;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+body > section .contact form > button{
+	display: block;
+	margin: 58px auto 0;
+	border: 3px solid #fff;
+	background: none;
+	padding: 15px 68px;
+	font-size: 30px;
+	color: white;
+	border-radius: 10px;
+	outline: none;
+}
+
+/* FOOTER */
+
+body > footer .lineBottom{
+	background: #f0f0f0;
+	padding: 84px 0 96px;
+}
+
+body > footer .lineBottom .bottomMenu{
+	
+}
+
+body > footer .lineBottom ul{
+	margin: 0;
+}
+
+body > footer .lineBottom li{
+	margin: 0 18px 0;
+}
+
+body > footer .lineBottom p{
+	font-size: 16px;
+	color: #000;
+}
+
+body > footer .lineBottom button{
+	padding: 18px 102px;
+	margin: 0 auto;
+	outline: none;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+	border-radius: 10px;
+	background: none;
+	border: 3px solid #000;
+	color: #000;
+}
+
+body > footer .lineBottom button:hover{
+	border-color: #6764cb;
+	background: #6764cb;
+	color: #fff;
+}
+
+body > footer .lineBottom .newsletter{
+	flex-direction: column;
+}
+
+/* MOBILE MENU*/
+
+body > header nav .mobile{
+	display: none;
+	align-items: center;
+	height: 40px;
+}
+
+body > header nav .mobile span,
+body > header nav .mobile span:before,
+body > header nav .mobile span:after{
+	width: 35px;
+	height: 5px;
+	background: #000;
+	margin-left: 15px;
+	content: "";
+	display: block;
+	border-radius: 2px;
+}
+
+body > header nav .mobile span:before,
+body > header nav .mobile span:after{
+	position: absolute;
+	margin: -10px 0 0 0;
+}
+
+body > header nav .mobile span:after{
+	margin: 10px 0 0 0;
+}
+
+body > header nav.active .mobile span:before{
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin: 0;
+	background: #000;
+}
+
+body > header nav.active .mobile span:after{
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	margin: 0;
+	background: #000;
+}
+
+body > header nav.active .mobile span{
+	background: transparent;
+}
+
+/* RWD */
+
+@media all and (max-width:1100px){
+	body > header .center > select{
+		display: none;
+	}
+	
+	body > header .lineTop nav.active .gone{
+		display: block;
+		text-align: center;
+	}
+	
+	body > header nav ul{
+		display: none !important;
+		position: absolute;
+		background: rgb(255 255 255 / 0.69);
+		margin-top: 10px;
+		left: 10%;
+		right: 10%;
+		padding: 30px 15px;
+	}
+	
+	body > header nav ul li{
+		margin: 24px 0!important;
+	}
+	
+	body > header nav ul a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	body > header nav.active ul{
+		display: block !important;
+	}
+	
+	body > header nav.active .gone select{
+		width: 100px;
+	}
+	
+	body > header nav .mobile{
+		display: inline-flex;
+	}
+}
+
+@media all and (max-width:535px){
+	body > section .icons{
+		padding: 72px 15px;
+	}
+	body > section .icons img{
+		margin: 0 auto;
+		display: block;
+		max-width: 97px;
+		max-height: 87px;
+		width: auto;
+		height: auto;
+	}
+	
+	body > section .icons .item{
+		width: 133px;
+		height: 133px;
+		margin: 15px;
+	}
+}
+
+@media all and (max-width:900px){
+	body > section .formarea{
+		flex-direction: column;
+	}
+	
+	body > section .contact .leftcol{
+		width: 300px;
+		padding: 0;
+	}
+	body > section .contact .rightcol{
+		width: 300px;
+		padding: 0;
+	}
+	body > section .contact form > button{
+		font-size: 24px;
+		padding: 15px 34px;
+	}
+	body > section .contact form{
+		width: 300px;
+		padding: 0;
+		margin: 0 auto;
+	}
+	body > section .contact .title .contactTitle{
+		font-size: 36px;
+	}
+	body > section .contact .leftcol .options{
+		margin-left: 16px;
+	}
+	body > section .contact{
+		padding: 60px 0 68px;
+		margin-bottom: 70px;
+	}
+}
+
+@media all and (max-width:1088px){
+	body > footer .lineBottom .bottomMenu{
+		flex-direction: column;
+	}
+	body > footer .lineBottom{
+		padding: 54px 0 74px;
+	}
+	body > footer .lineBottom .newsletter{
+		width: 267px;
+		text-align: center;
+	}
+	body > footer .lineBottom button{
+		font-size: 24px;
+		padding: 18px 70px;
+	}
+	body > footer .lineBottom ul{
+		padding: 0;
+		margin: 72px 0 102px;
+	}
+	body > footer .lineBottom li{
+		margin: 0 9px 0;
+	}
+}
+
+@media all and (max-width:768px){
+	body > section .container-fluid img{
+		height: 360px;
+	}
+}
+
+
+
+
+
+
+
+
